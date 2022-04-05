@@ -1,0 +1,48 @@
+.page-header {
+  background-image: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+}
+
+.page-header__wrapper {
+  width: $desktop-content;
+  min-height: 120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__logo {
+  svg {
+    display: block;
+    width: 215px;
+    height: 55px;
+  }
+}
+
+.page-header__contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  a {
+    display: block;
+    font-family: $ff-mono;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-light-font;
+  }
+}
+
+.page-header__button {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-light-font;
+  padding: 10px 15px;
+  border: 2px solid $color-light-font;
+  box-sizing: border-box;
+  border-radius: 3px;
+}

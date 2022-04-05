@@ -8,6 +8,12 @@
   min-height: calc(100 * var(--vh, 1vh));
   overflow: hidden;
 
+  font-family: $ff-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-light-font;
+
   .header,
   .footer {
     flex-shrink: 0;
