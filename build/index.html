@@ -14,22 +14,54 @@
         <div class="page-header__wrapper">
           <div class="page-header__logo">
             <a>
-              <img src="./img/header/header-logo-desktop.svg" width="215" height="55" alt="логотив smart device">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./img/header/header-logo-mobile.svg">
+                <img src="./img/header/header-logo-desktop.svg" width="215" height="55" alt="логотив smart device">
+              </picture>
             </a>
           </div>
 
           <ul class="page-header__contacts">
             <li class="page-header__tel">
-              <a href="tel:+74950005252">+7 (495) 000 52 52</a>
+              <a href="tel:+74950005252">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#header-phone-icon"></use>
+                </svg>
+                <p>+7 (495) 000 52 52</p>
+              </a>
             </li>
             <li class="page-header__mail">
-              <a href="mailto:info@sd.ru">info@sd.ru</a>
+              <a href="mailto:info@sd.ru">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#header-mail-icon"></use>
+                </svg>
+                <p>info@sd.ru</p>
+              </a>
             </li>
           </ul>
 
           <button class="button page-header__button" type="button">Заказать звонок</button>
         </div>
       </header>
+
+      <main>
+        <section class="main-screen">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./img/main/main-background-mobile.webp 1x, ./img/main/main-background-mobile@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="./img/main/main-background-mobile.jpg 1x, ./img/main/main-background-mobile@2x.jpg 2x">  <!-- 1х: 320px; 2x: 640px -->
+            <source media="(max-width: 1023px)" srcset="./img/main/main-background-tablet.webp 1x, ./img/main/main-background-tablet@2x.webp 2x">
+            <source media="(max-width: 1023px)" srcset="./img/main/main-background-tablet.jpg 1x, ../img/main/main-background-tablet@2x.jpg 2x"> <!-- 1х: 1396px; 2x: 2792px -->
+            <source type="image/webp" srcset="./img/main/main-background-desktop.webp 1x, ./img/main/main-background-desktop@2x.webp 2x">
+            <img src="./img/main/main-background-desktop.jpg" srcset="./img/main/main-background-desktop@2x.jpg" width="1920" height="880" alt="фоновое изображение"> <!-- 1х: 1920px; 2x: 3840px -->
+          </picture>
+          <div class="main-screen__content-wrapper">
+            <h2>Печатные платы</h2>
+            <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <a class="button" href="#">Получить бесплатную консультацию</a>
+          </div>
+
+        </section>
+      </main>
 
 
     </div>

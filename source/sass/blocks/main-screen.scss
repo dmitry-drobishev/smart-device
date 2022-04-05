@@ -1,0 +1,50 @@
+.main-screen {
+  img {
+    display: block;
+    position: absolute;
+    height: 880px;
+    width: 100%;
+    object-fit: cover;
+    z-index: -100;
+  }
+}
+
+.main-screen__content-wrapper {
+  padding-top: 300px;
+  margin-left: 475px;
+
+  h2 {
+    margin: 0;
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: $ff-mono;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 155%;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  a {
+    display: block;
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding: 15px 25px;
+    background-color: $color-light-blue;
+    border-radius: 3px;
+    color: $color-light-font;
+    width: fit-content;
+    margin-top: 40px;
+  }
+}

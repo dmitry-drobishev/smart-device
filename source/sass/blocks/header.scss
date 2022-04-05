@@ -1,5 +1,7 @@
 .page-header {
+  width: 100%;
   background-image: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  position: absolute;
 }
 
 .page-header__wrapper {
@@ -9,13 +11,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
+
+  @include vp-1279 {
+    width: auto;
+    margin: 0 $desktop-margin-asade;
+  }
+
+  @include vp-1023 {
+    margin: 0 $tablet-margin-asade;
+    min-height: 100px;
+  }
+
+  @include vp-767 {
+    min-height: 70px;
+    padding: 10px 0;
+    margin: 0 $mobile-margin-asade;
+  }
 }
 
 .page-header__logo {
-  svg {
+  img {
     display: block;
     width: 215px;
     height: 55px;
+
+    @include vp-767 {
+      width: 35px;
+      height: 35px;
+    }
   }
 }
 
@@ -25,13 +49,40 @@
   margin: 0;
   display: flex;
 
-  a {
+  svg {
     display: block;
-    font-family: $ff-mono;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    color: $color-light-font;
+    width: 20px;
+    height: 20px;
+  }
+
+  li {
+    margin-left: 100px;
+
+    @include vp-1023 {
+      margin-left: 40px;
+    }
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    p {
+      margin: 0;
+      margin-left: 10px;
+      font-family: $ff-mono;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: $color-light-font;
+
+      @include vp-1023 {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    display: flex;
   }
 }
 
@@ -45,4 +96,8 @@
   border: 2px solid $color-light-font;
   box-sizing: border-box;
   border-radius: 3px;
+
+  @include vp-1023 {
+    display: none;
+  }
 }
