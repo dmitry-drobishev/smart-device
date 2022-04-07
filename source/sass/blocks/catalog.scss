@@ -1,0 +1,145 @@
+.catalog {
+  width: 100%;
+  background-color: $color-extra-dark;
+  padding: 70px 0 140px 0;
+
+  @include vp-1023 {
+    padding: 60px 0 75px 0;
+  }
+
+  @include vp-767 {
+    padding: 50px 0 86px 0;
+  }
+}
+
+.catalog__wrapper {
+  width: $desktop-content;
+  margin: 0 auto;
+
+  @include vp-1279 {
+    width: auto;
+    margin: 0 $desktop-margin-asade;
+  }
+
+  @include vp-1023 {
+    margin: 0 $tablet-margin-asade;
+  }
+
+  @include vp-767 {
+    margin: 0 $mobile-margin-asade;
+  }
+
+  h2 {
+    font-family: $ff-roboto;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    margin: 0;
+    color: $color-default-white;
+
+    @include vp-767 {
+      font-size: 28px;
+      line-height: 140%;
+    }
+  }
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 50px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 350px 350px 350px;
+  gap: 85px;
+
+  @include vp-1279 {
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250px 250px;
+  }
+
+  @include vp-767 {
+    margin-top: 40px;
+  }
+}
+
+.catalog__item {
+  position: relative;
+  width: 350px;
+  min-height: 650px;
+
+  @include vp-1279 {
+    max-width: 350px;
+    width: auto;
+  }
+
+  @include vp-1023 {
+    max-width: none;
+    width: auto;
+    min-height: 250px;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h3 {
+    font-family: $ff-roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: $color-default-white;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    top: 50px;
+    left: 40px;
+    width: 210px;
+
+    @include vp-1023 {
+      top: 40px;
+      left: 45px;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 167%;
+      top: 30px;
+      left: 30px;
+      width: 150px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $color-light-blue;
+    background-image: url("../img/svg/arrow-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 4px 8px;
+    border-radius: 3px 0px 0px 0px;
+
+    @include vp-767 {
+      width: 40px;
+      height: 40px;
+      background-size: 3px 6px;
+    }
+  }
+}

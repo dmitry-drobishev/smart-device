@@ -3,6 +3,7 @@
   min-width: 320px;
   background-image: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   position: fixed;
+  z-index: 100;
 }
 
 .page-header__wrapper {
