@@ -1191,6 +1191,61 @@ button,
   min-width: 180px;
 }
 
+.advantages {
+  width: 1220px;
+  margin: 0 auto;
+  padding: 120px 0 60px 0;
+}
+
+.advantages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.advantages__item {
+  padding: 40px 45px;
+  border: 1px solid #EBEBEB;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 300px;
+}
+
+.advantages__item::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: #00B2FF;
+  left: -1px;
+  top: 0;
+}
+
+.advantages__item svg {
+  display: block;
+  fill: #00B2FF;
+  width: 35px;
+  height: 35px;
+}
+
+.advantages__item h3 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #00B2FF;
+}
+
+.advantages__item p {
+  color: #041827;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
