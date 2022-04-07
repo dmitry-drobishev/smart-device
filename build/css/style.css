@@ -869,6 +869,8 @@ button,
   user-select: none;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
 }
 
 .button:disabled {
@@ -1142,6 +1144,53 @@ button,
   border-radius: 3px 0px 0px 0px;
 }
 
+.about__wrapper {
+  width: 1220px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 100px;
+  padding: 60px 0 100px 0;
+}
+
+.about__wrapper img {
+  display: block;
+  width: 150px;
+  height: 320px;
+}
+
+.about__information-wrapper h2 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #041827;
+  margin: 0;
+}
+
+.about__information-wrapper p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #041827;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.about__information-wrapper button {
+  margin-top: 20px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #00B2FF;
+  border: 1px solid #00B2FF;
+  min-width: 180px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1223,6 +1272,12 @@ button,
   .catalog__item {
     max-width: 350px;
     width: auto;
+  }
+
+  .about__wrapper {
+    width: auto;
+    gap: 60px;
+    margin: 0 60px;
   }
 }
 
@@ -1353,6 +1408,12 @@ button,
     top: 40px;
     left: 45px;
   }
+
+  .about__wrapper {
+    padding: 40px 0 80px 0;
+    margin: 0 49px;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1482,5 +1543,30 @@ button,
     width: 40px;
     height: 40px;
     background-size: 3px 6px;
+  }
+
+  .about__wrapper {
+    padding: 25px 0 80px 0;
+    margin: 0 25px;
+    display: block;
+  }
+
+  .about__wrapper img {
+    display: none;
+  }
+
+  .about__information-wrapper h2 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+
+  .about__information-wrapper p {
+    font-size: 14px;
+    line-height: 134%;
+  }
+
+  .about__information-wrapper button {
+    min-width: 160px;
+    padding: 10px;
   }
 }

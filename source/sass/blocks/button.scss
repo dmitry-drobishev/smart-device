@@ -8,6 +8,8 @@
   user-select: none;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
 
   &:disabled {
     opacity: 0.2;
