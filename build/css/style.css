@@ -1203,8 +1203,7 @@ button,
   margin: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
@@ -1240,10 +1239,14 @@ button,
   font-size: 24px;
   line-height: 140%;
   color: #00B2FF;
+  margin: 0;
+  margin-top: 20px;
 }
 
 .advantages__item p {
   color: #041827;
+  margin: 0;
+  margin-top: 15px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1332,6 +1335,11 @@ button,
   .about__wrapper {
     width: auto;
     gap: 60px;
+    margin: 0 60px;
+  }
+
+  .advantages {
+    width: auto;
     margin: 0 60px;
   }
 }
@@ -1468,6 +1476,15 @@ button,
     padding: 40px 0 80px 0;
     margin: 0 49px;
     gap: 30px;
+  }
+
+  .advantages {
+    padding: 80px 0 40px 0;
+    margin: 0 49px;
+  }
+
+  .advantages__item {
+    min-height: 360px;
   }
 }
 
@@ -1623,5 +1640,34 @@ button,
   .about__information-wrapper button {
     min-width: 160px;
     padding: 10px;
+  }
+
+  .advantages {
+    padding: 50px 0 25px 0;
+    margin: 0 25px;
+  }
+
+  .advantages__list {
+    -ms-grid-columns: minmax(270px, 1fr);
+    grid-template-columns: minmax(270px, 1fr);
+  }
+
+  .advantages__item {
+    padding: 30px 30px;
+    min-height: 340px;
+  }
+
+  .advantages__item svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .advantages__item h3 {
+    font-size: 20px;
+  }
+
+  .advantages__item p {
+    font-size: 14px;
+    line-height: 135%;
   }
 }

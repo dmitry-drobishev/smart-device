@@ -104,7 +104,7 @@
 
             <picture>
               <!-- <source type="image/webp" srcset="./img/about/about-year.webp 1x, ./img/about/about-yearp@2x.webp 2x"> -->
-              <img src="./img/about/about-year.png" srcset="./img/about/about-year@2x.png 2x" width="150" height="320" alt="2022 год">
+              <img src="./img/about/about-year.png" srcset="./img/about/about-year@2x.png 2x" width="150" height="320" alt="2022 год"> <!-- 1х: 150px; 2x: 300px -->
             </picture>
 
             <div class="about__information-wrapper">
@@ -165,6 +165,48 @@
                 </picture>
               </li>
             </ul>
+          </div>
+        </section>
+
+        <section class="question-form">
+          <div class="question-form__wrapper">
+
+            <picture>
+              <!-- <source type="image/webp" srcset="./img/questions/paper_airplane.webp 1x, ./img/questions/paper_airplane@2x.webp 2x"> -->
+              <img src="./img/questions/paper_airplane.png" srcset="./img/questions/paper_airplane@2x.png 2x" width="510" height="285" alt="бумажный самолетик"> <!-- 1х: 510px; 2x: 1020px -->
+            </picture>
+
+            <form action="https://echo.htmlacademy.ru/courses" method="get" target="_blank">
+
+              <h2>Остались вопросы? Задайте их нам!</h2>
+
+              <p>Мы проконсультируем Вас бесплатно</p>
+
+              <ul class="question-form__list">
+
+                <li class="question-form__item">
+                  <label class="visually-hidden" for="name">Имя</label>
+                  <input type="text" id="name" name="name_user" placeholder="Имя" required>
+                </li>
+
+                <li class="question-form__item">
+                  <label class="visually-hidden" for="phone">Телефон</label>
+                  <input type="tel" id="phone" name="phone-number" placeholder="Телефон" required>
+                </li>
+
+                <li class="question-form__item">
+                  <label class="visually-hidden" for="text-form">Ваш вопрос</label>
+                  <input type="text" id="text-form" name="text" placeholder="Ваш вопрос" required>
+                </li>
+              </ul>
+
+              <div class="booking__checkbox">
+                <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data-checkbox" checked required>
+                <label for="personal-data">Я согласен на&nbsp;обработку персональных данных</label>
+              </div>
+
+              <button class="button" type="submit" id="question-button">Задать вопрос</button>
+            </form>
           </div>
         </section>
       </main>
