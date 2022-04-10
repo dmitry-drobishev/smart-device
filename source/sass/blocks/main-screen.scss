@@ -117,3 +117,17 @@
     }
   }
 }
+
+.main-screen__desktop-button {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.main-screen__mobile-button {
+  display: none;
+
+  @include vp-767 {
+    display: inline-block;
+  }
+}

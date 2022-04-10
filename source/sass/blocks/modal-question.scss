@@ -1,0 +1,44 @@
+.modal-question {
+  width: 500px;
+  min-height: 610px;
+  background-color: $color-light-blue;
+  padding: 40px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.modal-question__button-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/svg/close-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: center center;
+  }
+}
+
+.modal-question__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px
+
+}
+
+.modal-question__item {
+  margin-top: 20px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}

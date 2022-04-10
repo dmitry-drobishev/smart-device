@@ -24,8 +24,18 @@
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 595px);
   gap: 30px;
+
+  @include vp-1279 {
+    // grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  }
+
+  @include vp-1023 {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
 
   @include vp-767 {
     grid-template-columns: minmax(270px, 1fr);
@@ -35,9 +45,25 @@
 .advantages__item {
   padding: 40px 45px;
   border: 1px solid $color-light-grey-2;
+  border-left: 5px solid $color-light-blue;
   position: relative;
   box-sizing: border-box;
   min-height: 300px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $color-light-blue;
+    background-color: $color-light-blue;
+
+    h3,
+    p {
+      color: $color-light-font;
+    }
+
+    svg {
+      fill: $color-light-font;
+    }
+  }
 
   @include vp-1023 {
     min-height: 360px;
@@ -46,16 +72,6 @@
   @include vp-767 {
     padding: 30px 30px;
     min-height: 340px;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 5px;
-    background-color: $color-light-blue;
-    left: -1px;
-    top: 0;
   }
 
   svg {
