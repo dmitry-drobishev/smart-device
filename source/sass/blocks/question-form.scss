@@ -1,6 +1,6 @@
 .question-form {
   width: 100%;
-  background-image: linear-gradient(139deg, $color-light-grey2-transparent-50 628px, $color-light-blue 628px, $color-light-blue 100%);
+  background-image: linear-gradient(139.2deg, $color-light-grey2-transparent-50 629px, $color-light-blue 629px, $color-light-blue 100%);
   background-color:  $color-light-blue;
 
   @include vp-1279 {
@@ -15,11 +15,10 @@
 .question-form__wrapper {
   width: $desktop-content;
   margin: 0 auto;
-  padding: 165px 0;
+  padding: 165px 0 240px 0;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 120px;
-  // align-items: center;
 
   @include vp-1279 {
     width: auto;
@@ -43,6 +42,7 @@
     display: block;
     width: 510;
     height: 285;
+    margin-top: 80px;
 
     @include vp-1023 {
       display: none;
@@ -50,28 +50,15 @@
   }
 
   form {
-//     h2 {
-//       margin: 0;
-//       font-family: $ff-roboto;
-//       font-weight: 400;
-//       font-size: 36px;
-//       line-height: 51px;
-//       color: $color-default-white;
-
-//       @include vp-767 {
-//         font-size: 30px;
-//         line-height: 140%;
-//       }
-//     }
+    h2 {
+      margin-left: -5px;
+    }
 
     p {
       margin: 0;
       margin-top: 13px;
-//       color: $color-default-white;
 
       @include vp-767 {
-//         font-size: 14px;
-//         line-height: 134%;
         margin-top: 20px;
       }
     }
@@ -80,36 +67,13 @@
   button {
     width: 265px;
     padding: 10px;
-//     background-color: $color-extra-dark;
-//     color: $color-default-white;
-//     padding: 15px 25px;
-//     font-family: $ff-roboto;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 19px;
-//     flex-shrink: 0;
+    border: none;
 
     @include vp-767 {
       width: 100%;
     }
   }
 }
-
-// .question-form__button {
-//   width: 265px;
-//     background-color: $color-extra-dark;
-//     color: $color-default-white;
-//     padding: 15px 25px;
-//     font-family: $ff-roboto;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 19px;
-//     flex-shrink: 0;
-
-//   @include vp-767 {
-//     width: 100%;
-//   }
-// }
 
 .question-form__list {
   list-style: none;
@@ -134,30 +98,6 @@
 }
 
 .question-form__item {
-  // input,
-  //  textarea {
-  //   display: block;
-  //   border: none;
-  //   background-color: $color-light-grey-tranparent-15;
-  //   border-radius: 3px;
-  //   margin: 0;
-
-  //   &::placeholder {
-  //     font-family: $ff-mono;
-  //     font-weight: 400;
-  //     font-size: 16px;
-  //     line-height: 22px;
-  //     color: $color-default-white;
-  //   }
-  // }
-
-  // &--phone,
-  // &--name {
-  //   input {
-  //     padding: 15px;
-  //     width: 100%;
-  //   }
-  // }
 
   &--text {
     grid-column: 1 / 3;
@@ -165,11 +105,6 @@
     @include vp-767 {
       grid-column: auto;
     }
-
-    // textarea {
-    //   width: 100%;
-    //   padding: 25px 15px;
-    // }
   }
 }
 
@@ -178,7 +113,7 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: start;
-  align-items: center;
+  align-items: baseline;
 
   @include vp-767 {
     margin-top: 30px;
@@ -194,34 +129,4 @@
     margin-left: 0;
     margin-top: 25px;
   }
-
-  // label {
-  //   display: block;
-  //   font-size: 14px;
-  //   line-height: 16px;
-  //   color: $color-default-white;
-  //   opacity: 0.8;
-  //   position: relative;
-  //   width: 235px;
-  //   padding-left: 25px;
-
-  //   &::before {
-  //     position: absolute;
-  //     content: "";
-  //     width: 15px;
-  //     height: 15px;
-  //     box-sizing: border-box;
-  //     border: 1px solid $color-default-white;
-  //     border-radius: 2px;
-  //     left: 0;
-  //     top: 10px;
-  //   }
-  // }
-
-  // input:checked + label::before {
-  //   background-image: url("../img/svg/checkbox-icon.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center center;
-  //   background-size: 9px 6px ;
-  // }
 }

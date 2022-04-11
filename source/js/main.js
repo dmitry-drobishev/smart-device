@@ -1,8 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {aboutButtonHandler} from './modules/modals/about';
+import {getChangeAccordion} from './modules/modals/footer-accordion';
 
 aboutButtonHandler();
+
+getChangeAccordion();
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
