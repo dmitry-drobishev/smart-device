@@ -22,20 +22,21 @@
           </div>
 
           <ul class="page-header__contacts">
-            <li class="page-header__tel">
-              <a href="tel:+74950005252">
-                <svg width="20" height="20">
-                  <use xlink:href="img/sprite_auto.svg#header-phone-icon"></use>
-                </svg>
-                <p>+7 (495) 000 52 52</p>
-              </a>
-            </li>
             <li class="page-header__mail">
               <a href="mailto:info@sd.ru">
                 <svg width="20" height="20">
                   <use xlink:href="img/sprite_auto.svg#header-mail-icon"></use>
                 </svg>
                 <p>info@sd.ru</p>
+              </a>
+            </li>
+
+            <li class="page-header__tel">
+              <a href="tel:+74950005252">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#header-phone-icon"></use>
+                </svg>
+                <p>+7 (495) 000 52 52</p>
               </a>
             </li>
           </ul>
@@ -126,7 +127,7 @@
                 </span>
               </p>
 
-              <button class="button">Подробнее</button>
+              <button class="button about__button">Подробнее</button>
             </div>
           </div>
         </section>
@@ -138,7 +139,7 @@
             <ul class="catalog__list">
               <li class="catalog__item">
                 <a href="#">
-                  <h3>Производство печатных плат</h3>
+                  <h3>Производство<br>печатных плат</h3>
 
                   <picture>
                     <source media="(max-width: 767px)" srcset="./img/catalog/catalog-production-mobile.webp 1x, ./img/catalog/catalog-production-mobile@2x.webp 2x">
@@ -192,7 +193,7 @@
               <img src="./img/questions/paper_airplane.png" srcset="./img/questions/paper_airplane@2x.png 2x" width="510" height="285" alt="бумажный самолетик"> <!-- 1х: 510px; 2x: 1020px -->
             </picture>
 
-            <form action="https://echo.htmlacademy.ru/courses" method="get" target="_blank">
+            <form class="form" action="https://echo.htmlacademy.ru/courses" method="get" target="_blank">
 
               <h2>Остались вопросы? Задайте их нам!</h2>
 
@@ -200,29 +201,29 @@
 
               <ul class="question-form__list">
 
-                <li class="question-form__item question-form__item--name">
+                <li class="form__item form__item--name question-form__item question-form__item--name">
                   <label class="visually-hidden" for="name">Имя</label>
                   <input type="text" id="name" name="name_user" placeholder="Имя" required>
                 </li>
 
-                <li class="question-form__item question-form__item--phone">
+                <li class="form__item form__item--phone question-form__item question-form__item--phone">
                   <label class="visually-hidden" for="phone">Телефон</label>
                   <input type="tel" id="phone" name="phone-number" placeholder="Телефон" required>
                 </li>
 
-                <li class="question-form__item question-form__item--text">
+                <li class="form__item form__item--text question-form__item question-form__item--text">
                   <label class="visually-hidden" for="text-form">Ваш вопрос</label>
-                  <textarea name="textarea" id="text-form" rows="10" placeholder="Ваш вопрос" required></textarea>
+                  <textarea name="textarea" id="text-form" rows="5" placeholder="Ваш вопрос" required></textarea>
                 </li>
               </ul>
 
               <div class="question-form__button-checkbox-wrapper">
-                <div class="question-form__checkbox">
+                <div class="form__checkbox question-form__checkbox">
                   <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data-checkbox" checked required>
                   <label for="personal-data">Я согласен на&nbsp;обработку персональных данных</label>
                 </div>
 
-                <button class="button" type="submit" id="question-button">Задать вопрос</button>
+                <button class="button question-form__button" type="submit" id="question-button">Задать вопрос</button>
               </div>
             </form>
           </div>
@@ -331,7 +332,7 @@
       </footer>
     </div>
 
-    <section class="modal-question">
+    <section class="modal-question visually-hidden">
 
       <form class="form" action="https://echo.htmlacademy.ru/courses" method="get" target="_blank">
 
@@ -353,16 +354,18 @@
 
           <li class="form__item form__item--text modal-question__item modal-question__item--text">
             <label class="visually-hidden" for="text-form">Ваш вопрос</label>
-            <textarea name="textarea" id="text-form" rows="10" placeholder="Ваш вопрос" required></textarea>
+            <textarea name="textarea" id="text-form" rows="10" placeholder="Ваш вопрос"></textarea>
           </li>
         </ul>
 
-        <div class="form__checkbox modal-question__checkbox">
-          <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data-checkbox" checked required>
-          <label for="personal-data">Я согласен на&nbsp;обработку персональных данных</label>
-        </div>
+        <div class="modal-question__checkbox-button-wrapper">
+          <div class="form__checkbox modal-question__checkbox">
+            <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data-checkbox" checked required>
+            <label for="personal-data">Я согласен на&nbsp;обработку персональных данных</label>
+          </div>
 
-        <button class="button" type="submit" id="question-button">Задать вопрос</button>
+          <button class="button" type="submit" id="question-button">Задать вопрос</button>
+        </div>
       </form>
 
       <button class="modal-question__button-close">

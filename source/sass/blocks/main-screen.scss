@@ -33,7 +33,7 @@
 .main-screen__content-wrapper {
   width: $desktop-content;
   margin: 0 auto;
-  padding-top: 300px;
+  padding-top: 305px;
   padding-left: 125px;
   padding-right: 50px;
   padding-bottom: 50px;
@@ -78,7 +78,7 @@
     font-size: 22px;
     line-height: 155%;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 32px;
     width: 685px;
 
     @include vp-1023 {
@@ -99,12 +99,13 @@
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    padding: 15px 25px;
+    padding: 16px 25px;
     background-color: $color-light-blue;
     border-radius: 3px;
     color: $color-light-font;
     width: fit-content;
-    margin-top: 40px;
+    margin-top: 46px;
+    width: 410px;
 
     @include vp-1023 {
       margin-top: 50px;

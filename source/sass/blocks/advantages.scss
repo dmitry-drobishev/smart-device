@@ -43,7 +43,7 @@
 }
 
 .advantages__item {
-  padding: 40px 45px;
+  padding: 40px 40px;
   border: 1px solid $color-light-grey-2;
   border-left: 5px solid $color-light-blue;
   position: relative;
@@ -103,7 +103,8 @@
   p {
     color: $color-extra-dark;
     margin: 0;
-    margin-top: 15px;
+    margin-top: 14px;
+    line-height: 135%;
 
     @include vp-767 {
       font-size: 14px;

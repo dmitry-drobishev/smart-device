@@ -6,23 +6,24 @@
   margin: 0 auto;
   position: relative;
 
+  p {
+    margin-top: 15px;
+  }
 }
 
 .modal-question__button-close {
   position: absolute;
   right: 15px;
   top: 15px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/svg/close-icon.svg");
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    background-position: center center;
-  }
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/svg/close-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: center center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .modal-question__list {
@@ -41,4 +42,18 @@
   &:first-of-type {
     margin-top: 0;
   }
+}
+
+.modal-question__checkbox-button-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 25px;
+
+  button {
+    width: 100%;
+  }
+}
+
+.modal-question__checkbox {
+  margin-top: 20px;
 }
