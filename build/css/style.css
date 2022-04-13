@@ -1047,7 +1047,7 @@ button,
 }
 
 .page-footer__social {
-  margin-top: 40px;
+  margin-top: 32px;
   margin-left: 15px;
 }
 
@@ -1081,7 +1081,7 @@ button,
 }
 
 .page-footer__menu {
-  margin-right: 6px;
+  margin-right: 30px;
   margin-left: auto;
 }
 
@@ -1276,7 +1276,8 @@ button,
   padding: 12px;
 }
 
-.about__optional-text--hidden {
+.about__optional-text--hidden,
+.about__optional-text-mobile--hidden {
   display: none;
 }
 
@@ -1348,15 +1349,15 @@ button,
 
 .question-form {
   width: 100%;
-  background-image: -o-linear-gradient(310.8deg, rgba(4, 24, 39, 0.5) 629px, #00B2FF 629px, #00B2FF 100%);
-  background-image: linear-gradient(139.2deg, rgba(4, 24, 39, 0.5) 629px, #00B2FF 629px, #00B2FF 100%);
+  background-image: -o-linear-gradient(310.8deg, rgba(4, 24, 39, 0.5) 634px, #00B2FF 629px, #00B2FF 100%);
+  background-image: linear-gradient(139.2deg, rgba(4, 24, 39, 0.5) 634px, #00B2FF 629px, #00B2FF 100%);
   background-color: #00B2FF;
 }
 
 .question-form__wrapper {
   width: 1220px;
   margin: 0 auto;
-  padding: 165px 0 240px 0;
+  padding: 165px 0 247px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1fr;
@@ -1919,8 +1920,8 @@ button,
 
   .about__wrapper {
     padding: 35px 0 80px 0;
-    margin: 0 49px;
-    gap: 25px;
+    margin: 0 50px 0 46px;
+    gap: 28px;
   }
 
   .about__wrapper img {
@@ -2064,8 +2065,8 @@ button,
 
   .page-footer h3 {
     position: relative;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 
   .page-footer__wrapper {
@@ -2078,6 +2079,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 0;
+    padding: 35px 0 35px 0;
   }
 
   .page-footer__logo-social-wrapper {
@@ -2085,13 +2087,14 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-bottom: 25px;
+    padding-bottom: 22px;
     position: relative;
     margin: 0 25px;
   }
 
   .page-footer__social {
-    margin-top: 25px;
+    margin: 0;
+    margin-top: 20px;
   }
 
   .page-footer__menu {
@@ -2140,6 +2143,8 @@ button,
     background-size: 15px 15px;
     background-position: center center;
     right: 0;
+    top: 20px;
+    right: 2px;
   }
 
   .page-footer__menu-wrapper .panel-active::after,
@@ -2164,7 +2169,7 @@ button,
   }
 
   .catalog {
-    padding: 50px 0 86px 0;
+    padding: 47px 0 86px 0;
   }
 
   .catalog__wrapper {
@@ -2185,13 +2190,13 @@ button,
   }
 
   .catalog__list {
-    margin-top: 40px;
+    margin-top: 29px;
   }
 
   .catalog__item h3 {
     font-size: 18px;
     line-height: 167%;
-    top: 30px;
+    top: 25px;
     left: 30px;
     width: 150px;
   }
@@ -2225,6 +2230,9 @@ button,
   .about__information-wrapper button {
     min-width: 160px;
     padding: 10px;
+    margin-top: 12px;
+    padding-top: 9px;
+    padding-bottom: 9px;
   }
 
   .advantages {
@@ -2239,7 +2247,11 @@ button,
 
   .advantages__item {
     padding: 30px 25px 36px 25px;
-    min-height: 320px;
+    min-height: 340px;
+  }
+
+  .advantages__item--short {
+    min-height: 325px;
   }
 
   .advantages__item svg {
@@ -2254,18 +2266,18 @@ button,
   .advantages__item p {
     font-size: 14px;
     line-height: 135%;
-    min-height: 190px;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
   }
 
   .question-form__wrapper {
     padding-bottom: 90px;
+    padding-top: 46px;
     margin: 0 25px;
   }
 
   .question-form__wrapper form p {
-    margin-top: 20px;
+    margin-top: 9px;
   }
 
   .question-form__wrapper button {
@@ -2273,10 +2285,11 @@ button,
   }
 
   .question-form__list {
-    margin-top: 40px;
+    margin-top: 32px;
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
     column-gap: 0;
+    row-gap: 19px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -2285,8 +2298,13 @@ button,
     grid-column: auto;
   }
 
+  .question-form__item--text textarea {
+    height: 11em;
+    padding-top: 22px;
+  }
+
   .question-form__button-checkbox-wrapper {
-    margin-top: 30px;
+    margin-top: 32px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
@@ -2299,6 +2317,7 @@ button,
   .question-form__checkbox {
     margin: 0;
     margin-top: 25px;
+    margin-left: 5px;
   }
 
   .form h2 {

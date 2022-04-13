@@ -1,6 +1,6 @@
 .question-form {
   width: 100%;
-  background-image: linear-gradient(139.2deg, $color-light-grey2-transparent-50 629px, $color-light-blue 629px, $color-light-blue 100%);
+  background-image: linear-gradient(139.2deg, $color-light-grey2-transparent-50 634px, $color-light-blue 629px, $color-light-blue 100%);
   background-color:  $color-light-blue;
 
   @include vp-1279 {
@@ -15,7 +15,7 @@
 .question-form__wrapper {
   width: $desktop-content;
   margin: 0 auto;
-  padding: 165px 0 240px 0;
+  padding: 165px 0 247px 0;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 120px;
@@ -35,6 +35,7 @@
 
   @include vp-767 {
     padding-bottom: 90px;
+    padding-top: 46px;
     margin: 0 $mobile-margin-asade;
   }
 
@@ -63,7 +64,7 @@
       }
 
       @include vp-767 {
-        margin-top: 20px;
+        margin-top: 9px;
       }
     }
   }
@@ -94,8 +95,9 @@
   }
 
   @include vp-767 {
-    margin-top: 40px;
+    margin-top: 32px;
     column-gap: 0;
+    row-gap: 19px;
     grid-template-columns: 1fr;
   }
 }
@@ -107,6 +109,13 @@
 
     @include vp-767 {
       grid-column: auto;
+    }
+
+    textarea {
+      @include vp-767 {
+        height: 11em;
+        padding-top: 22px;
+      }
     }
   }
 }
@@ -123,7 +132,7 @@
   }
 
   @include vp-767 {
-    margin-top: 30px;
+    margin-top: 32px;
     flex-direction: column-reverse;
     align-items: flex-start;
   }
@@ -138,9 +147,9 @@
     margin-top: 5px;
   }
 
-
   @include vp-767 {
     margin: 0;
     margin-top: 25px;
+    margin-left: 5px;
   }
 }

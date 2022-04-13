@@ -72,7 +72,13 @@
 
   @include vp-767 {
     padding: 30px 25px 36px 25px;
-    min-height: 320px;
+    min-height: 340px;
+  }
+
+  &--short {
+    @include vp-767 {
+      min-height: 325px;
+    }
   }
 
   svg {
@@ -118,7 +124,7 @@
     @include vp-767 {
       font-size: 14px;
       line-height: 135%;
-      min-height: 190px;
+      // min-height: 190px;
       box-sizing: content-box;
     }
   }
