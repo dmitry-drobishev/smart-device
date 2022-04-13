@@ -1457,6 +1457,10 @@ button,
   cursor: pointer;
 }
 
+.modal-question__button-close:hover {
+  opacity: 0.5;
+}
+
 .modal-question__list {
   list-style: none;
   padding: 0;
