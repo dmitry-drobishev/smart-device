@@ -4,7 +4,7 @@
   padding: 66px 0 140px 0;
 
   @include vp-1023 {
-    padding: 60px 0 75px 0;
+    padding: 56px 0 75px 0;
   }
 
   @include vp-767 {
@@ -44,6 +44,20 @@
   }
 }
 
+.catalog__title-desktop {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.catalog__title-mobile {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
 .catalog__list {
   margin: 0;
   padding: 0;
@@ -62,6 +76,7 @@
   @include vp-1023 {
     grid-template-columns: 1fr;
     grid-template-rows: 250px 250px 250px;
+    margin-top: 38px;
   }
 
   @include vp-767 {
@@ -119,10 +134,10 @@
     margin: 0;
     top: 48px;
     left: 40px;
-    width: 210px;
+    width: 190px;
 
     @include vp-1023 {
-      top: 40px;
+      top: 36px;
       left: 45px;
     }
 

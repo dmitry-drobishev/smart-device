@@ -19,6 +19,8 @@
 
     @include vp-767 {
       position: relative;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
 
@@ -30,7 +32,7 @@
 .page-footer__wrapper {
   width: $desktop-content;
   min-height: 280px;
-  padding: 50px 0;
+  padding: 54px 0;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 235px 1fr 345px;
@@ -44,7 +46,10 @@
   @include vp-1023 {
     margin: 0 $tablet-margin-asade;
     grid-template-columns: 1fr 1fr;
-    gap: 35px;
+    column-gap: 35px;
+    row-gap: 37px;
+
+    padding: 50px 0 65px 0;
   }
 
   @include vp-767 {
@@ -142,14 +147,16 @@
 
   @include vp-767 {
     width: 100%;
-    padding: 20px 0;
+    // padding: 20px 0;
     border-top: 1px solid $color-light-grey;
     border-bottom: 1px solid $color-light-grey;
   }
 }
 
 .page-footer__menu-wrapper {
-  margin: 0 $mobile-margin-asade;
+  @include vp-767 {
+    margin: 0 $mobile-margin-asade;
+  }
 }
 
 .page-footer__menu-list {
@@ -165,7 +172,7 @@
   // grid-auto-flow: column;
   // height: 130px;
   column-gap: 30px;
-  row-gap: 10px;
+  row-gap: 8px;
 
   @include vp-1279 {
     grid-template-columns: 150px 150px;
@@ -178,6 +185,8 @@
 
   @include vp-767 {
     grid-template-columns: 100%;
+    padding-bottom: 20px;
+    margin-top: 0;
   }
 }
 
@@ -197,7 +206,7 @@
 
   @include vp-767 {
     width: 100%;
-    padding: 20px 0;
+    // padding: 20px 0;
     border-bottom: 1px solid $color-light-grey;
   }
 }
@@ -213,10 +222,15 @@
   margin: 0;
   padding: 0;
   margin-top: 22px;
+
+  @include vp-767 {
+    padding-bottom: 20px;
+    margin-top: 0;
+  }
 }
 
 .page-footer__contacts-item {
-  margin-top: 10px;
+  margin-top: 8px;
 
   &:first-of-type {
     margin-top: 0;
@@ -247,11 +261,13 @@
   }
 }
 
-.page-footer__menu-wrapper--hidden h3,
-.page-footer__contacts-wrapper--hidden h3 {
-  @include vp-767 {
-    &::after {
-      background-image: url("../img/svg/plus.svg");
+.page-footer__menu-wrapper,
+.page-footer__contacts-wrapper {
+  .panel-active {
+    @include vp-767 {
+      &::after {
+        background-image: url("../img/svg/plus.svg");
+      }
     }
   }
 }
@@ -279,4 +295,20 @@
     @include vp-767 {
       display: block;
     }
+}
+
+.page-footer__nojs {
+  .page-footer__accordion-item-body {
+    @include vp-767 {
+      display: block;
+    }
+  }
+
+  h3 {
+    @include vp-767 {
+      &::after {
+        display: none;
+      }
+    }
+  }
 }

@@ -67,11 +67,12 @@
 
   @include vp-1023 {
     min-height: 360px;
+    padding-bottom: 30px;
   }
 
   @include vp-767 {
-    padding: 30px 30px;
-    min-height: 340px;
+    padding: 30px 25px 36px 25px;
+    min-height: 320px;
   }
 
   svg {
@@ -95,6 +96,10 @@
     margin: 0;
     margin-top: 20px;
 
+    @include vp-1023 {
+      margin-top: 15px;
+    }
+
     @include vp-767 {
       font-size: 20px;
     }
@@ -106,9 +111,15 @@
     margin-top: 14px;
     line-height: 135%;
 
+    @include vp-1023 {
+      margin-top: 9px;
+    }
+
     @include vp-767 {
       font-size: 14px;
       line-height: 135%;
+      min-height: 190px;
+      box-sizing: content-box;
     }
   }
 }

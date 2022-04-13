@@ -3,6 +3,7 @@
   min-height: 880px;
   min-width: 320px;
   background-image: $main-screen-gradient;
+  position: relative;
 
   @include vp-1023 {
     min-height: 640px;
@@ -30,17 +31,23 @@
   }
 }
 
+.main-screen__background-color {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 32, 36, 0.8);
+  z-index: -1000;
+}
+
 .main-screen__content-wrapper {
   width: $desktop-content;
   margin: 0 auto;
-  padding-top: 305px;
-  padding-left: 125px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+  padding: 305px 50px 50px 125px;
   box-sizing: border-box;
 
   @include vp-1279 {
-    width: 1024px;
+    width: auto;
+    margin: $desktop-margin-asade;
   }
 
   @include vp-1023 {
@@ -83,10 +90,11 @@
 
     @include vp-1023 {
       width: auto;
-      margin-top: 20px;
+      margin-top: 0;
     }
 
     @include vp-767 {
+      margin-top: 8px;
       font-size: 14px;
       line-height: 155%;
     }
@@ -99,7 +107,7 @@
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    padding: 16px 25px;
+    padding: 16px 25px 17px 25px;
     background-color: $color-light-blue;
     border-radius: 3px;
     color: $color-light-font;
@@ -108,13 +116,17 @@
     width: 410px;
 
     @include vp-1023 {
-      margin-top: 50px;
+      margin-top: 57px;
+      margin-left: 45px;
     }
 
     @include vp-767 {
       font-size: 14px;
       line-height: 16px;
       width: 100%;
+      margin: 0;
+      margin-top: 44px;
+      padding: 12px;
     }
   }
 }
