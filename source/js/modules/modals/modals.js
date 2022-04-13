@@ -1,5 +1,7 @@
 import {ScrollLock} from '../../utils/scroll-lock';
 import {FocusLock} from '../../utils/focus-lock';
+import {enterCheckbox} from './form';
+
 
 export class Modals {
   constructor(settings = {}) {
@@ -84,6 +86,13 @@ export class Modals {
     }
 
     this.open();
+
+    const buttonForm = document.getElementById('question-button');
+    const checkboxForm = document.getElementById('personal-data-modal');
+
+    checkboxForm.addEventListener('click', () => {
+      enterCheckbox(checkboxForm, buttonForm);
+    });
   }
 
   _documentKeydownHandler(evt) {

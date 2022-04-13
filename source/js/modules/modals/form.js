@@ -1,20 +1,6 @@
-const telRegexp = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
-const userPhoneInput = document.querySelector('.form__item--phone input');
-const userCheckbox = document.querySelector('.form__checkbox input');
-const buttonHandler = document.getElementById('form-button');
+// функция выключает кнопку отправки форму при ненажатом чекбоксе
 
-const enterUserPhone = () => {
-
-  if (!telRegexp.test(userPhoneInput.value)) {
-    userPhoneInput.setCustomValidity(`- номер телефона состоит из 11 цифр;
-    - в номере телефона не может быть букв`);
-  } else {
-    userPhoneInput.setCustomValidity('');
-  }
-  userPhoneInput.reportValidity();
-};
-
-const enterCheckbox = () => {
+const enterCheckbox = (userCheckbox, buttonHandler) => {
   if (userCheckbox.checked !== true) {
     buttonHandler.disabled = true;
   } else {
@@ -22,4 +8,4 @@ const enterCheckbox = () => {
   }
 };
 
-export {enterCheckbox, enterUserPhone};
+export {enterCheckbox};

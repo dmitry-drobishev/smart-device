@@ -9,15 +9,26 @@ aboutButtonHandler();
 getChangeAccordion();
 
 const userCheckbox = document.querySelector('.form__checkbox input');
-userCheckbox.addEventListener('click', enterCheckbox);
+const buttonHandler = document.getElementById('form-button');
+
+userCheckbox.addEventListener('click', () => {
+  enterCheckbox(userCheckbox, buttonHandler);
+});
 
 document.addEventListener('DOMContentLoaded', () => {
 
   const inputElement = document.querySelector('.form__item--phone input'); // ищем наш единственный input
   const maskOptions = {mask: '+{7}(000)000-00-00'};
   IMask(inputElement, maskOptions); // запускаем плагин с переданными параметрами
-
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const inputElement = document.getElementById('modal-input-phone');
+  const maskOptions = {mask: '+{7}(000)000-00-00'};
+  IMask(inputElement, maskOptions); // запускаем плагин с переданными параметрами
+});
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
