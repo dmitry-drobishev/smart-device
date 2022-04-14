@@ -20,5 +20,3 @@ const modalValid = () => {
 };
 
 export {modalValid};
-
-

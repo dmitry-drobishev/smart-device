@@ -1085,11 +1085,7 @@ button,
   margin-left: auto;
 }
 
-.page-footer__menu-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 22px;
+.page-footer__menu-list-wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 220px 220px;
@@ -1097,7 +1093,28 @@ button,
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
-  row-gap: 8px;
+  margin-top: 22px;
+}
+
+.page-footer__menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page-footer__menu-item {
+  margin-top: 8px;
+}
+
+.page-footer__menu-item:first-of-type {
+  margin-top: 0;
 }
 
 .page-footer__menu-item a {
@@ -1715,7 +1732,7 @@ button,
     grid-template-columns: 235px 1fr 280px;
   }
 
-  .page-footer__menu-list {
+  .page-footer__menu-list-wrapper {
     -ms-grid-columns: 150px 150px;
     grid-template-columns: 150px 150px;
     -webkit-column-gap: 20px;
@@ -1884,9 +1901,13 @@ button,
     margin: 0;
   }
 
-  .page-footer__menu-list {
+  .page-footer__menu-list-wrapper {
     -ms-grid-columns: 220px;
     grid-template-columns: 220px;
+  }
+
+  .page-footer__menu-item:first-of-type {
+    margin-top: 8px;
   }
 
   .page-footer__contacts {
@@ -2111,7 +2132,7 @@ button,
     margin: 0 25px;
   }
 
-  .page-footer__menu-list {
+  .page-footer__menu-list-wrapper {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
     padding-bottom: 20px;
@@ -2151,8 +2172,8 @@ button,
     right: 2px;
   }
 
-  .page-footer__menu-wrapper .panel-active::after,
-  .page-footer__contacts-wrapper .panel-active::after {
+  .page-footer__menu-wrapper .page-footer__accordeon-item-active::after,
+  .page-footer__contacts-wrapper .page-footer__accordeon-item-active::after {
     background-image: url("../img/svg/plus.svg");
   }
 
@@ -2160,7 +2181,7 @@ button,
     display: none;
   }
 
-  .panel-active + .page-footer__accordion-item-body {
+  .page-footer__accordeon-item-active + .page-footer__accordion-item-body {
     display: block;
   }
 

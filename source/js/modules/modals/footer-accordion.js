@@ -6,7 +6,7 @@ function hideAll() {
   const TitleList = pageFooter.querySelectorAll('.accordion__handler');
 
   for (let i = 0; i < TitleList.length; i++) {
-    TitleList[i].classList.remove('panel-active');
+    TitleList[i].classList.remove('page-footer__accordeon-item-active');
   }
 }
 
@@ -17,11 +17,11 @@ const getChangeAccordion = () => {
       if (evt.target.tagName !== ('H3')) {
         return 0;
       }
-      if (evt.target.classList.contains('panel-active')) {
+      if (evt.target.classList.contains('page-footer__accordeon-item-active')) {
         hideAll();
       } else {
         hideAll();
-        evt.target.classList.add('panel-active');
+        evt.target.classList.add('page-footer__accordeon-item-active');
       }
       return 1;
     });

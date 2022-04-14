@@ -214,7 +214,7 @@
 
                 <li class="form__item form__item--phone question-form__item question-form__item--phone">
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input class="tel" type="text" id="phone" name="phone-number" placeholder="Телефон" required>
+                  <input class="tel" type="text" id="phone" name="phone-number" placeholder="Телефон" maxlength="16" minlength="16" required>
                 </li>
 
                 <li class="form__item form__item--text question-form__item question-form__item--text">
@@ -279,15 +279,11 @@
             <div class="page-footer__menu-wrapper">
               <h3 class="page-footer__title accordion__handler">Разделы сайта</h3>
 
-              <div class="page-footer__accordion-item-body">
+              <div class="page-footer__menu-list-wrapper page-footer__accordion-item-body">
 
-                <ul class="page-footer__menu-list">
+                <ul class="page-footer__menu-list page-footer__menu-list--col1">
                   <li class="page-footer__menu-item">
                     <a href="#">О Компании</a>
-                  </li>
-
-                  <li class="page-footer__menu-item">
-                    <a href="#">Комплектующие</a>
                   </li>
 
                   <li class="page-footer__menu-item">
@@ -295,19 +291,25 @@
                   </li>
 
                   <li class="page-footer__menu-item">
-                    <a href="#">Доставка</a>
-                  </li>
-
-                  <li class="page-footer__menu-item">
                     <a href="#">Производство печатных плат</a>
                   </li>
 
                   <li class="page-footer__menu-item">
-                    <a href="#">Контакты</a>
+                    <a href="#">Монтаж печатных плат</a>
+                  </li>
+                </ul>
+
+                <ul class="page-footer__menu-list page-footer__menu-list--col1">
+                  <li class="page-footer__menu-item">
+                    <a href="#">Комплектующие</a>
                   </li>
 
                   <li class="page-footer__menu-item">
-                    <a href="#">Монтаж печатных плат</a>
+                    <a href="#">Доставка</a>
+                  </li>
+
+                  <li class="page-footer__menu-item">
+                    <a href="#">Контакты</a>
                   </li>
                 </ul>
               </div>
@@ -349,7 +351,6 @@
 
     <!-- Модалки -->
 
-
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
@@ -370,7 +371,7 @@
 
               <li class="form__item form__item--phone modal-question__item modal-question__item--phone">
                 <label class="visually-hidden" for="modal-input-phone">Телефон</label>
-                <input type="tel" id="modal-input-phone" name="phone-number" placeholder="Телефон" required>
+                <input type="tel" id="modal-input-phone" name="phone-number" placeholder="Телефон" maxlength="16" minlength="16" required>
               </li>
 
               <li class="form__item form__item--text modal-question__item modal-question__item--text">
@@ -395,7 +396,7 @@
         </div>
       </div>
     </div>
-    <!-- <script src="https://unpkg.com/imask"></script> -->
+
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

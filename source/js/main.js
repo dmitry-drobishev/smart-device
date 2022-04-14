@@ -15,12 +15,12 @@ formValid();
 // MASK
 // ---------------------------------
 
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
 
-  const inputElement = document.getElementById('modal-input-phone');
-  const maskOptions = {mask: '+{7}(000)000-00-00'};
-  IMask(inputElement, maskOptions); // запускаем плагин с переданными параметрами
-});
+//   const inputElement = document.getElementById('modal-input-phone');
+//   const maskOptions = {mask: '+{7}(000)000-00-00'};
+//   IMask(inputElement, maskOptions); // запускаем плагин с переданными параметрами
+// });
 
 // ---------------------------------
 

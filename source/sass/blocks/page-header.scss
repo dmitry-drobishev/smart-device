@@ -91,7 +91,6 @@
   @include vp-1023 {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 0;
     margin-left: 30px;
     justify-content: flex-end;
     margin-right: 30px;
@@ -111,7 +110,6 @@
   }
 
   li {
-
     @include vp-1023 {
       margin-left: 39px;
     }

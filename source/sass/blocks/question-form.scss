@@ -1,7 +1,7 @@
 .question-form {
   width: 100%;
   background-image: linear-gradient(139.2deg, $color-light-grey2-transparent-50 634px, $color-light-blue 629px, $color-light-blue 100%);
-  background-color:  $color-light-blue;
+  background-color: $color-light-blue;
 
   @include vp-1279 {
     background-image: linear-gradient(139deg, $color-light-grey2-transparent-50 350px, $color-light-blue 350px, $color-light-blue 100%);
@@ -103,7 +103,6 @@
 }
 
 .question-form__item {
-
   &--text {
     grid-column: 1 / 3;
 
