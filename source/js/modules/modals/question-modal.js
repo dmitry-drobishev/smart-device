@@ -1,57 +1,24 @@
-// const feedbackLink = document.querySelector(".feedback-button"); // кнопка для открытия попапа
-// const feedbackPopup = document.querySelector(".modal-message"); // модальное окно
-// const feedbackClose = feedbackPopup.querySelector(".modal-close"); //кнопка закрытия попапа
-// const feedbackForm = feedbackPopup.querySelector(".modal-form"); //тег форм
-// const feedbackLogin = feedbackPopup.querySelector(".modal-name input");
-// const feedbackMail = feedbackPopup.querySelector(".modal-mail input");
-// const feedbackMessage = feedbackPopup.querySelector(".modal-textarea")
+import {enterCheckbox} from './form';
+import IMask from 'imask';
 
-// let isStorageSupport = true;
-// let storage = "";
+const buttonForm = document.getElementById('question-button');
+const checkboxForm = document.getElementById('personal-data-modal');
+const modalName = document.querySelector('.modal-question__item--name input');
+const modalPhone = document.getElementById('modal-input-phone');
+const maskOptions = {mask: '+{7}(000)000-00-00'};
 
-// try {
-//   storage = localStorage.getItem("name");
-// } catch (err) {
-//   isStorageSupport = false;
-// }
+const modalValid = () => {
+  checkboxForm.addEventListener('click', () => {
+    enterCheckbox(checkboxForm, buttonForm);
+  });
 
-// feedbackLink.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   feedbackPopup.classList.add("modal-show");
+  document.addEventListener('DOMContentLoaded', () => {
+    IMask(modalPhone, maskOptions);
+  });
 
-//   if (storage) {
-//     feedbackLogin.value = storage;
-//     feedbackMail.focus();
-//   } else {
-//     feedbackLogin.focus();
-//   }
-// });
+  modalName.focus();
+};
 
-// feedbackClose.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   feedbackPopup.classList.remove("modal-show");
-//   feedbackPopup.classList.remove("modal-error");
-// });
+export {modalValid};
 
-// feedbackForm.addEventListener("submit", function (evt) {
-//   if (!feedbackLogin.value || !feedbackMail.value || !feedbackMessage.value) {
-//     evt.preventDefault();
-//     feedbackPopup.classList.remove("modal-error");
-//     feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
-//     feedbackPopup.classList.add("modal-error");
-//   } else {
-//     if (isStorageSupport) {
-//         localStorage.setItem("name", feedbackLogin.value);
-//       }
-//     }
-// });
 
-// window.addEventListener("keydown", function (evt) {
-//   if (evt.keyCode === 27) {
-//     if (feedbackPopup.classList.contains("modal-show")) {
-//       evt.preventDefault();
-//       feedbackPopup.classList.remove("modal-show");
-//       feedbackPopup.classList.remove("modal-error");
-//     }
-//   }
-// });

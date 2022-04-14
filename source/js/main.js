@@ -2,25 +2,18 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {aboutButtonHandler} from './modules/modals/about';
 import {getChangeAccordion} from './modules/modals/footer-accordion';
-import {enterCheckbox} from './modules/modals/form';
+import {formValid} from './modules/modals/question';
+import IMask from 'imask';
 
 aboutButtonHandler();
 
 getChangeAccordion();
 
-const userCheckbox = document.querySelector('.form__checkbox input');
-const buttonHandler = document.getElementById('form-button');
+formValid();
 
-userCheckbox.addEventListener('click', () => {
-  enterCheckbox(userCheckbox, buttonHandler);
-});
 
-document.addEventListener('DOMContentLoaded', () => {
-
-  const inputElement = document.querySelector('.form__item--phone input'); // ищем наш единственный input
-  const maskOptions = {mask: '+{7}(000)000-00-00'};
-  IMask(inputElement, maskOptions); // запускаем плагин с переданными параметрами
-});
+// MASK
+// ---------------------------------
 
 document.addEventListener('DOMContentLoaded', () => {
 

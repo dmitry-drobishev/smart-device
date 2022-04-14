@@ -1,4 +1,5 @@
 import {Modals} from './modals';
+import {modalValid} from './question-modal';
 
 let modals;
 
@@ -21,7 +22,7 @@ const settings = {
     startFocus: true,
     focusBack: true,
     eventTimeout: 400,
-    openCallback: false,
+    openCallback: modalValid,
     closeCallback: false,
   },
 };
