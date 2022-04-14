@@ -32,7 +32,7 @@
 .page-footer__wrapper {
   width: $desktop-content;
   min-height: 280px;
-  padding: 54px 0;
+  padding: 50px 0;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 235px 1fr 345px;
@@ -96,7 +96,7 @@
 }
 
 .page-footer__social {
-  margin-top: 32px;
+  margin-top: 40px;
   margin-left: 15px;
 
   @include vp-1023 {
@@ -171,6 +171,7 @@
 
   @include vp-1023 {
     grid-template-columns: 220px;
+    margin-top: 15px;
   }
 
   @include vp-767 {
@@ -232,8 +233,8 @@
   margin-top: 22px;
 
   @include vp-767 {
-    padding-bottom: 20px;
-    margin-top: 0;
+    margin-top: -7px;
+    padding-bottom: 16px;
   }
 }
 
@@ -242,6 +243,10 @@
 
   &:first-of-type {
     margin-top: 0;
+
+    @include vp-767 {
+      margin-bottom: 14px;
+    }
   }
 }
 
@@ -283,6 +288,11 @@
 .page-footer__menu-item,
 .page-footer__contacts-item {
   a {
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 135%;
+    }
+
     &:hover {
       opacity: 0.7;
     }

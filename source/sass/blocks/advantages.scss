@@ -24,12 +24,10 @@
   padding: 0;
   margin: 0;
   display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-columns: repeat(2, 595px);
   gap: 30px;
 
   @include vp-1279 {
-    // grid-template-columns: 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
   }
 
@@ -124,7 +122,6 @@
     @include vp-767 {
       font-size: 14px;
       line-height: 135%;
-      // min-height: 190px;
       box-sizing: content-box;
     }
   }

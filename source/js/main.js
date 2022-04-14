@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {aboutButtonHandler} from './modules/modals/about';
 import {getChangeAccordion} from './modules/modals/footer-accordion';
 import {formValid} from './modules/modals/question';
-import IMask from 'imask';
+import {modalValid} from './modules/modals/question-modal';
 
 aboutButtonHandler();
 
@@ -11,16 +11,7 @@ getChangeAccordion();
 
 formValid();
 
-
-// MASK
-// ---------------------------------
-
-// document.addEventListener('DOMContentLoaded', () => {
-
-//   const inputElement = document.getElementById('modal-input-phone');
-//   const maskOptions = {mask: '+{7}(000)000-00-00'};
-//   IMask(inputElement, maskOptions); // запускаем плагин с переданными параметрами
-// });
+modalValid();
 
 // ---------------------------------
 

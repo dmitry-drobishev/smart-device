@@ -683,11 +683,9 @@ button,
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   pointer-events: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -1018,7 +1016,7 @@ button,
 .page-footer__wrapper {
   width: 1220px;
   min-height: 280px;
-  padding: 54px 0;
+  padding: 50px 0;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -1044,7 +1042,7 @@ button,
 }
 
 .page-footer__social {
-  margin-top: 32px;
+  margin-top: 40px;
   margin-left: 15px;
 }
 
@@ -1363,15 +1361,15 @@ button,
 
 .question-form {
   width: 100%;
-  background-image: -o-linear-gradient(310.8deg, rgba(4, 24, 39, 0.5) 634px, #00b2ff 629px, #00b2ff 100%);
-  background-image: linear-gradient(139.2deg, rgba(4, 24, 39, 0.5) 634px, #00b2ff 629px, #00b2ff 100%);
+  background-image: -o-linear-gradient(310.8deg, rgba(4, 24, 39, 0.5) 631px, #00b2ff 631px, #00b2ff 100%);
+  background-image: linear-gradient(139.2deg, rgba(4, 24, 39, 0.5) 631px, #00b2ff 631px, #00b2ff 100%);
   background-color: #00b2ff;
 }
 
 .question-form__wrapper {
   width: 1220px;
   margin: 0 auto;
-  padding: 165px 0 247px 0;
+  padding: 165px 0 243px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1fr;
@@ -1388,6 +1386,7 @@ button,
 
 .question-form__wrapper form h2 {
   margin: 0;
+  margin-left: -5px;
 }
 
 .question-form__wrapper form p {
@@ -1900,6 +1899,7 @@ button,
   .page-footer__menu-list-wrapper {
     -ms-grid-columns: 220px;
     grid-template-columns: 220px;
+    margin-top: 15px;
   }
 
   .page-footer__menu-item:first-of-type {
@@ -1940,7 +1940,7 @@ button,
   }
 
   .about__wrapper {
-    padding: 35px 0 80px 0;
+    padding: 35px 0 82px 0;
     margin: 0 50px 0 46px;
     gap: 28px;
   }
@@ -1950,7 +1950,7 @@ button,
   }
 
   .about__information-wrapper button {
-    margin-top: -6px;
+    margin-top: -8px;
   }
 
   .advantages {
@@ -1989,6 +1989,10 @@ button,
     display: none;
   }
 
+  .question-form__wrapper form h2 {
+    margin: 0;
+  }
+
   .question-form__wrapper form p {
     margin-top: 5px;
   }
@@ -1999,13 +2003,21 @@ button,
     margin-top: 25px;
   }
 
+  .question-form__item--text textarea {
+    height: 155px;
+  }
+
   .question-form__button-checkbox-wrapper {
-    margin-top: 33px;
+    margin-top: 34px;
   }
 
   .question-form__checkbox {
     margin-left: 85px;
     margin-top: 5px;
+  }
+
+  .form__item--text textarea {
+    padding-top: 29px;
   }
 }
 
@@ -2145,8 +2157,12 @@ button,
   }
 
   .page-footer__contacts-list {
-    padding-bottom: 20px;
-    margin-top: 0;
+    margin-top: -7px;
+    padding-bottom: 16px;
+  }
+
+  .page-footer__contacts-item:first-of-type {
+    margin-bottom: 14px;
   }
 
   .page-footer__menu-wrapper--hidden .page-footer__menu-list {
@@ -2170,6 +2186,12 @@ button,
   .page-footer__menu-wrapper .page-footer__accordeon-item-active::after,
   .page-footer__contacts-wrapper .page-footer__accordeon-item-active::after {
     background-image: url("../img/svg/plus.svg");
+  }
+
+  .page-footer__menu-item a,
+  .page-footer__contacts-item a {
+    font-size: 14px;
+    line-height: 135%;
   }
 
   .page-footer__accordion-item-body {
@@ -2228,7 +2250,7 @@ button,
   }
 
   .about__wrapper {
-    padding: 25px 0 80px 0;
+    padding: 23px 0 80px 0;
     margin: 0 25px;
     display: block;
   }
@@ -2250,7 +2272,7 @@ button,
   .about__information-wrapper button {
     min-width: 160px;
     padding: 10px;
-    margin-top: 12px;
+    margin-top: 13px;
     padding-top: 9px;
     padding-bottom: 9px;
   }
@@ -2291,7 +2313,7 @@ button,
   }
 
   .question-form__wrapper {
-    padding-bottom: 90px;
+    padding-bottom: 88px;
     padding-top: 46px;
     margin: 0 25px;
   }
@@ -2319,12 +2341,12 @@ button,
   }
 
   .question-form__item--text textarea {
-    height: 11em;
+    height: 180px;
     padding-top: 22px;
   }
 
   .question-form__button-checkbox-wrapper {
-    margin-top: 32px;
+    margin-top: 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;

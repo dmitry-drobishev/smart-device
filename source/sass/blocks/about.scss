@@ -13,13 +13,13 @@
   }
 
   @include vp-1023 {
-    padding: 35px 0 80px 0;
+    padding: 35px 0 82px 0;
     margin: 0 50px 0 46px;
     gap: 28px;
   }
 
   @include vp-767 {
-    padding: 25px 0 80px 0;
+    padding: 23px 0 80px 0;
     margin: 0 $mobile-margin-asade;
     display: block;
   }
@@ -81,13 +81,13 @@
     padding: 12px;
 
     @include vp-1023 {
-      margin-top: -6px;
+      margin-top: -8px;
     }
 
     @include vp-767 {
       min-width: 160px;
       padding: 10px;
-      margin-top: 12px;
+      margin-top: 13px;
       padding-top: 9px;
       padding-bottom: 9px;
     }
