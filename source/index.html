@@ -7,6 +7,11 @@
     <meta name="description" content="Поставка ЭРИ, установка ЭРИ на печатную плату, комплектующие для светотехники">
     <title>smart device</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/180.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
   </head>
   <body class="page-body">
     <div class="wrapper">
@@ -15,15 +20,18 @@
           <div class="page-header__logo">
             <a>
               <picture>
+                <!-- 1х: 35px; -->
                 <source media="(max-width: 767px)" srcset="./img/header/header-logo-mobile.svg">
+                <!-- 1х: 215px; -->
                 <img src="./img/header/header-logo-desktop.svg" width="215" height="55" alt="логотив smart device">
               </picture>
             </a>
           </div>
 
-          <ul class="page-header__contacts">
-            <li class="page-header__mail">
+          <ul class="page-header__contacts-list">
+            <li class="page-header__contact-item page-header__contact-item--mail">
               <a href="mailto:info@sd.ru">
+                <!-- 1х: 20px;-->
                 <svg width="20" height="20">
                   <use xlink:href="img/sprite_auto.svg#header-mail-icon"></use>
                 </svg>
@@ -31,8 +39,9 @@
               </a>
             </li>
 
-            <li class="page-header__tel">
+            <li class="page-header__contact-item page-header__contact-item--tel">
               <a href="tel:+74950005252">
+                <!-- 1х: 20px;-->
                 <svg width="20" height="20">
                   <use xlink:href="img/sprite_auto.svg#header-phone-icon"></use>
                 </svg>
@@ -46,26 +55,32 @@
       </header>
 
       <main>
+
+        <h1 class="visually-hidden">"Smart device" - компания по поставке электронных комплектующих и производству печатных плат</h1>
+
         <section class="main-screen">
           <div class="main-screen__background-color">
             <span class="visually-hidden">фоновый цвет</span>
           </div>
 
           <picture>
+            <!-- 1х: 320px; 2x: 640px -->
             <source media="(max-width: 767px)" srcset="./img/main/main-background-mobile.webp 1x, ./img/main/main-background-mobile@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="./img/main/main-background-mobile.jpg 1x, ./img/main/main-background-mobile@2x.jpg 2x">  <!-- 1х: 320px; 2x: 640px -->
+            <source media="(max-width: 767px)" srcset="./img/main/main-background-mobile.jpg 1x, ./img/main/main-background-mobile@2x.jpg 2x">
+            <!-- 1х: 1396px; 2x: 2792px -->
             <source media="(max-width: 1023px)" srcset="./img/main/main-background-tablet.webp 1x, ./img/main/main-background-tablet@2x.webp 2x">
-            <source media="(max-width: 1023px)" srcset="./img/main/main-background-tablet.jpg 1x, ./img/main/main-background-tablet@2x.jpg 2x"> <!-- 1х: 1396px; 2x: 2792px -->
+            <source media="(max-width: 1023px)" srcset="./img/main/main-background-tablet.jpg 1x, ./img/main/main-background-tablet@2x.jpg 2x">
+            <!-- 1х: 1920px; 2x: 3840px -->
             <source type="image/webp" srcset="./img/main/main-background-desktop.webp 1x, ./img/main/main-background-desktop@2x.webp 2x">
-            <img src="./img/main/main-background-desktop.jpg" srcset="./img/main/main-background-desktop@2x.jpg 2x" width="1920" height="880" alt="фоновое изображение"> <!-- 1х: 1920px; 2x: 3840px -->
+            <img src="./img/main/main-background-desktop.jpg" srcset="./img/main/main-background-desktop@2x.jpg 2x" width="1920" height="880" alt="фоновое изображение">
           </picture>
 
           <div class="main-screen__content-wrapper">
             <h2>Печатные платы</h2>
             <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-            <a class="button" href="#question">
-              <span class="main-screen__desktop-button">Получить бесплатную консультацию</span>
-              <span class="main-screen__mobile-button">Бесплатная консультация</span>
+            <a class="button main-screen__button" href="#question">
+              <span>Получить бесплатную консультацию</span>
+              <span>Бесплатная консультация</span>
             </a>
           </div>
         </section>
@@ -74,6 +89,7 @@
           <section class="advantages__wrapper">
             <ul class="advantages__list">
               <li class="advantages__item">
+                <!-- 1х: 35px;-->
                 <svg width="35" height="35">
                   <use xlink:href="img/sprite_auto.svg#stopwatch-icon"></use>
                 </svg>
@@ -82,6 +98,7 @@
               </li>
 
               <li class="advantages__item">
+                <!-- 1х: 35px;-->
                 <svg width="35" height="35">
                   <use xlink:href="img/sprite_auto.svg#hired-icon"></use>
                 </svg>
@@ -90,6 +107,7 @@
               </li>
 
               <li class="advantages__item advantages__item--short">
+                <!-- 1х: 35px;-->
                 <svg width="35" height="35">
                   <use xlink:href="img/sprite_auto.svg#detective-icon"></use>
                 </svg>
@@ -98,6 +116,7 @@
               </li>
 
               <li class="advantages__item advantages__item--short">
+                <!-- 1х: 35px;-->
                 <svg width="35" height="35">
                   <use xlink:href="img/sprite_auto.svg#tag-icon"></use>
                 </svg>
@@ -112,8 +131,9 @@
           <div class="about__wrapper">
 
             <picture>
+              <!-- 1х: 150px; 2x: 300px -->
               <source type="image/webp" srcset="./img/about/about-year.webp 1x, ./img/about/about-year@2x.webp 2x">
-              <img src="./img/about/about-year.png" srcset="./img/about/about-year@2x.png 2x" width="150" height="320" alt="2022 год"> <!-- 1х: 150px; 2x: 300px -->
+              <img src="./img/about/about-year.png" srcset="./img/about/about-year@2x.png 2x" width="150" height="320" alt="2022 год">
             </picture>
 
             <div class="about__information-wrapper">
@@ -148,12 +168,15 @@
                   <h3>Производство<br>печатных плат</h3>
 
                   <picture>
+                    <!-- 1х: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="./img/catalog/catalog-production-mobile.webp 1x, ./img/catalog/catalog-production-mobile@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="./img/catalog/catalog-production-mobile.jpg 1x, ./img/catalog/catalog-production-mobile@2x.jpg 2x">  <!-- 1х: 270px; 2x: 540px -->
+                    <source media="(max-width: 767px)" srcset="./img/catalog/catalog-production-mobile.jpg 1x, ./img/catalog/catalog-production-mobile@2x.jpg 2x">
+                    <!-- 1х: 670px; 2x: 1340px -->
                     <source media="(max-width: 1023px)" srcset="./img/catalog/catalog-production-tablet.webp 1x, ./img/catalog/catalog-production-tablet@2x.webp 2x">
-                    <source media="(max-width: 1023px)" srcset="./img/catalog/catalog-production-tablet.jpg 1x, ./img/catalog/catalog-production-tablet@2x.jpg 2x"> <!-- 1х: 670px; 2x: 1340px -->
+                    <source media="(max-width: 1023px)" srcset="./img/catalog/catalog-production-tablet.jpg 1x, ./img/catalog/catalog-production-tablet@2x.jpg 2x">
+                    <!-- 1х: 350px; 2x: 700px -->
                     <source type="image/webp" srcset="./img/catalog/catalog-production-desktop.webp 1x, ./img/catalog/catalog-production-desktop@2x.webp 2x">
-                    <img src="./img/catalog/catalog-production-desktop.jpg" srcset="./img/catalog/catalog-production-desktop@2x.jpg" width="350" height="650" alt="фоновое изображение"> <!-- 1х: 350px; 2x: 700px -->
+                    <img src="./img/catalog/catalog-production-desktop.jpg" srcset="./img/catalog/catalog-production-desktop@2x.jpg" width="350" height="650" alt="фоновое изображение">
                   </picture>
                 </a>
               </li>
@@ -163,12 +186,15 @@
                   <h3>Монтаж печатных плат</h3>
 
                   <picture>
+                    <!-- 1х: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="./img/catalog/catalog-pcb-mobile.webp 1x, ./img/catalog/catalog-pcb-mobile@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="./img/catalog/catalog-pcb-mobile.jpg 1x, ./img/catalog/catalog-pcb-mobile@2x.jpg 2x">  <!-- 1х: 270px; 2x: 540px -->
+                    <source media="(max-width: 767px)" srcset="./img/catalog/catalog-pcb-mobile.jpg 1x, ./img/catalog/catalog-pcb-mobile@2x.jpg 2x">
+                    <!-- 1х: 670px; 2x: 1340px -->
                     <source media="(max-width: 1023px)" srcset="./img/catalog/catalog-pcb-tablet.webp 1x, ./img/catalog/catalog-pcb-tablet@2x.webp 2x">
-                    <source media="(max-width: 1023px)" srcset="./img/catalog/catalog-pcb-tablet.jpg 1x, ./img/catalog/catalog-pcb-tablet@2x.jpg 2x"> <!-- 1х: 670px; 2x: 1340px -->
+                    <source media="(max-width: 1023px)" srcset="./img/catalog/catalog-pcb-tablet.jpg 1x, ./img/catalog/catalog-pcb-tablet@2x.jpg 2x">
+                    <!-- 1х: 350px; 2x: 700px -->
                     <source type="image/webp" srcset="./img/catalog/catalog-pcb-desktop.webp 1x, ./img/catalog/catalog-pcb-desktop@2x.webp 2x">
-                    <img src="./img/catalog/catalog-pcb-desktop.jpg" srcset="./img/catalog/catalog-pcb-desktop@2x.jpg" width="350" height="650" alt="фоновое изображение"> <!-- 1х: 350px; 2x: 700px -->
+                    <img src="./img/catalog/catalog-pcb-desktop.jpg" srcset="./img/catalog/catalog-pcb-desktop@2x.jpg" width="350" height="650" alt="фоновое изображение">
                   </picture>
                 </a>
               </li>
@@ -178,12 +204,15 @@
                   <h3>Комплектующие для&nbsp;светотехники</h3>
 
                   <picture>
+                    <!-- 1х: 270px; 2x: 540px -->
                     <source media="(max-width: 767px)" srcset="./img/catalog/catalog-parts-mobile.webp 1x, ./img/catalog/catalog-parts-mobile@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="./img/catalog/catalog-parts-mobile.jpg 1x, ./img/catalog/catalog-parts-mobile@2x.jpg 2x">  <!-- 1х: 270px; 2x: 540px -->
+                    <source media="(max-width: 767px)" srcset="./img/catalog/catalog-parts-mobile.jpg 1x, ./img/catalog/catalog-parts-mobile@2x.jpg 2x">
+                    <!-- 1х: 670px; 2x: 1340px -->
                     <source media="(max-width: 1023px)" srcset="./img/catalog/catalog-parts-tablet.webp 1x, ./img/catalog/catalog-parts-tablet@2x.webp 2x">
-                    <source media="(max-width: 1023px)" srcset="./img/catalog/catalog-parts-tablet.jpg 1x, ./img/catalog/catalog-parts-tablet@2x.jpg 2x"> <!-- 1х: 670px; 2x: 1340px -->
+                    <source media="(max-width: 1023px)" srcset="./img/catalog/catalog-parts-tablet.jpg 1x, ./img/catalog/catalog-parts-tablet@2x.jpg 2x">
+                    <!-- 1х: 350px; 2x: 700px -->
                     <source type="image/webp" srcset="./img/catalog/catalog-parts-desktop.webp 1x, ./img/catalog/catalog-parts-desktop@2x.webp 2x">
-                    <img src="./img/catalog/catalog-parts-desktop.jpg" srcset="./img/catalog/catalog-parts-desktop@2x.jpg" width="350" height="650" alt="фоновое изображение"> <!-- 1х: 350px; 2x: 700px -->
+                    <img src="./img/catalog/catalog-parts-desktop.jpg" srcset="./img/catalog/catalog-parts-desktop@2x.jpg" width="350" height="650" alt="фоновое изображение">
                   </picture>
                 </a>
               </li>
@@ -195,8 +224,9 @@
           <div class="question-form__wrapper">
 
             <picture>
+              <!-- 1х: 510px; 2x: 1020px -->
               <source type="image/webp" srcset="./img/questions/paper_airplane.webp 1x, ./img/questions/paper_airplane@2x.webp 2x">
-              <img src="./img/questions/paper_airplane.png" srcset="./img/questions/paper_airplane@2x.png 2x" width="510" height="285" alt="бумажный самолетик"> <!-- 1х: 510px; 2x: 1020px -->
+              <img src="./img/questions/paper_airplane.png" srcset="./img/questions/paper_airplane@2x.png 2x" width="510" height="285" alt="бумажный самолетик">
             </picture>
 
             <form class="form" action="https://echo.htmlacademy.ru/courses" method="get" target="_blank">
@@ -236,12 +266,13 @@
         </section>
       </main>
 
-      <footer class="page-footer page-footer__nojs">
-        <div class="page-footer__wrapper">
+      <footer class="page-footer">
+        <div class="page-footer__wrapper page-footer__wrapper--nojs">
 
           <div class="page-footer__logo-social-wrapper">
             <div class="page-footer__logo">
               <a>
+                <!-- 1х: 215px;-->
                 <img src="./img/header/header-logo-desktop.svg" width="215" height="55" alt="логотив smart device">
               </a>
             </div>
@@ -250,6 +281,7 @@
               <ul class="page-footer__social-list">
                 <li class="page-footer__social-item">
                   <a href="#">
+                    <!-- 1х: 30px;-->
                     <svg width="30" height="30">
                       <use xlink:href="img/sprite_auto.svg#facebook-icon"></use>
                     </svg>
@@ -258,6 +290,7 @@
 
                 <li class="page-footer__social-item">
                   <a href="#">
+                    <!-- 1х: 30px;-->
                     <svg width="30" height="30">
                       <use xlink:href="img/sprite_auto.svg#schoolmate-icon"></use>
                     </svg>
@@ -266,6 +299,7 @@
 
                 <li class="page-footer__social-item">
                   <a href="#">
+                    <!-- 1х: 30px;-->
                     <svg width="30" height="30">
                       <use xlink:href="img/sprite_auto.svg#vk-icon"></use>
                     </svg>
@@ -277,7 +311,7 @@
 
           <section class="page-footer__menu">
             <div class="page-footer__menu-wrapper">
-              <h3 class="page-footer__title accordion__handler">Разделы сайта</h3>
+              <h3 class="page-footer__title page-footer__accordion-handler">Разделы сайта</h3>
 
               <div class="page-footer__menu-list-wrapper page-footer__accordion-item-body">
 
@@ -319,7 +353,7 @@
           <section class="page-footer__contacts">
 
             <div class="page-footer__contacts-wrapper">
-              <h3 class="page-footer__title  accordion__handler">Наш офис</h3>
+              <h3 class="page-footer__title  page-footer__accordion-handler">Наш офис</h3>
 
               <div class="page-footer__accordion-item-body">
 
@@ -376,7 +410,7 @@
 
               <li class="form__item form__item--text modal-question__item modal-question__item--text">
                 <label class="visually-hidden" for="text-form">Ваш вопрос</label>
-                <textarea name="textarea" id="text-form" rows="10" placeholder="Ваш вопрос"></textarea>
+                <textarea name="textarea" id="modal-text-form" rows="10" placeholder="Ваш вопрос"></textarea>
               </li>
             </ul>
 

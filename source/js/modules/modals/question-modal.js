@@ -1,5 +1,5 @@
 import {enterCheckbox} from './form';
-import IMask from 'imask';
+import iMask from 'imask';
 
 const buttonForm = document.getElementById('question-button');
 const checkboxForm = document.getElementById('personal-data-modal');
@@ -13,7 +13,7 @@ const modalValid = () => {
   });
 
   document.addEventListener('DOMContentLoaded', () => {
-    IMask(modalPhone, maskOptions);
+    iMask(modalPhone, maskOptions);
   });
 
   modalName.focus();

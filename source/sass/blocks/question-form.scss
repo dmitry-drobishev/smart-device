@@ -41,8 +41,9 @@
 
   img {
     display: block;
-    width: 510;
-    height: 285;
+    width: 510px;
+    height: 285px;
+    object-fit: contain;
     margin-top: 80px;
 
     @include vp-1023 {

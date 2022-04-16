@@ -1,5 +1,5 @@
 import {enterCheckbox} from './form';
-import IMask from 'imask';
+import iMask from 'imask';
 
 const userCheckbox = document.querySelector('.form__checkbox input');
 const buttonHandler = document.getElementById('form-button');
@@ -12,7 +12,7 @@ const formValid = () => {
   });
 
   document.addEventListener('DOMContentLoaded', () => {
-    IMask(inputElement, maskOptions);
+    iMask(inputElement, maskOptions);
   });
 };
 
