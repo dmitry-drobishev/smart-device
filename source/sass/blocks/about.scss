@@ -98,3 +98,14 @@
 .about__optional-text-mobile--hidden {
   display: none;
 }
+
+
+.about__information-wrapper--nojs {
+  span {
+    display: block;
+  }
+
+  button {
+    display: none;
+  }
+}

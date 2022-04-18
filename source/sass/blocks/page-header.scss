@@ -48,7 +48,9 @@
 
   a {
     display: block;
+  }
 
+  a[href] {
     &:hover {
       opacity: 0.7;
     }

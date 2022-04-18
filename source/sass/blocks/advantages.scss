@@ -76,6 +76,14 @@
   &--short {
     @include vp-767 {
       min-height: 325px;
+
+      h3 {
+        margin-top: 17px;
+      }
+
+      p {
+        margin-top: 15px;
+      }
     }
   }
 
