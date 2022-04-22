@@ -39,7 +39,6 @@
 }
 
 .page-header__logo {
-  cursor: pointer;
   flex-shrink: 0;
 
   @include vp-1279 {
@@ -51,6 +50,8 @@
   }
 
   a[href] {
+    cursor: pointer;
+
     &:hover {
       opacity: 0.7;
     }
@@ -73,16 +74,16 @@
 }
 
 .page-header__contacts-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: grid;
-  margin-left: 160px;
   width: 480px;
   grid-template-columns: 225px 225px;
   column-gap: 28px;
   row-gap: 15px;
-  margin-top: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 155px;
+  margin-top: 11px;
 
   @include vp-1279 {
     margin-left: auto;
@@ -94,8 +95,8 @@
     flex-wrap: wrap;
     margin-left: 30px;
     justify-content: flex-end;
-    margin-right: 30px;
-    margin-top: 10px;
+    margin-right: 25px;
+    margin-top: 5px;
     gap: 0;
   }
 
@@ -112,6 +113,7 @@
 
   a {
     display: flex;
+    padding: 5px;
 
     &:hover {
       opacity: 0.7;
@@ -124,8 +126,9 @@
 }
 
 .page-header__contact-item {
+  width: fit-content;
   @include vp-1023 {
-    margin-left: 39px;
+    margin-left: 29px;
   }
 
   &:first-of-type {

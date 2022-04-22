@@ -69,7 +69,7 @@
   }
 
   button {
-    margin-top: 18px;
+    margin-top: 38px;
     font-family: $ff-roboto;
     font-weight: 700;
     font-size: 14px;
@@ -78,10 +78,10 @@
     color: $color-light-blue;
     border: 1px solid $color-light-blue;
     min-width: 180px;
-    padding: 12px;
+    padding: 13px;
 
     @include vp-1023 {
-      margin-top: -8px;
+      margin-top: 13px;
     }
 
     @include vp-767 {

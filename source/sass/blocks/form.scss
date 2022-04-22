@@ -126,4 +126,8 @@
     background-position: center center;
     background-size: 9px 6px;
   }
+
+  input:focus-visible + label::before {
+    outline: solid;
+  }
 }
