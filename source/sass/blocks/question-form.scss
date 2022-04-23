@@ -1,6 +1,6 @@
 .question-form {
   width: 100%;
-  background-image: linear-gradient(139.2deg, $color-light-grey2-transparent-50 631px, $color-light-blue 631px, $color-light-blue 100%);
+  background-image: linear-gradient(139.2deg, $color-light-grey2-transparent-50 634px, $color-light-blue 634px, $color-light-blue 100%);
   background-color: $color-light-blue;
 
   @include vp-1279 {
@@ -15,7 +15,7 @@
 .question-form__wrapper {
   width: $desktop-content;
   margin: 0 auto;
-  padding: 165px 0 247px 0;
+  padding: 165px 0 248px 0;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 120px;
@@ -150,6 +150,16 @@
 .question-form__checkbox {
   margin-left: 51px;
   margin-top: 12px;
+
+  label {
+    width: 235px;
+    padding-left: 26px;
+
+    &::before {
+      left: 0;
+      top: 7px;
+    }
+  }
 
   @include vp-1023 {
     margin-left: 85px;

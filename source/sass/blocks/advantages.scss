@@ -73,20 +73,6 @@
     min-height: 340px;
   }
 
-  &--short {
-    @include vp-767 {
-      min-height: 325px;
-
-      h3 {
-        margin-top: 17px;
-      }
-
-      p {
-        margin-top: 15px;
-      }
-    }
-  }
-
   svg {
     display: block;
     fill: $color-light-blue;
@@ -131,6 +117,49 @@
       font-size: 14px;
       line-height: 135%;
       box-sizing: content-box;
+    }
+  }
+
+  &--short {
+    h3 {
+      @include vp-1023 {
+        margin-top: 13px;
+      }
+
+      @include vp-767 {
+        margin-top: 18px;
+      }
+
+    }
+
+    p {
+      @include vp-1023 {
+        margin-top: 13px;
+      }
+    }
+
+    @include vp-767 {
+      min-height: 325px;
+    }
+  }
+
+  &--price {
+    h3 {
+      margin-top: 20px;
+
+      @include vp-1023 {
+        margin-top: 10px;
+      }
+    }
+
+    p {
+      @include vp-1023 {
+        margin-top: 6px;
+      }
+
+      @include vp-767 {
+        margin-top: 13px;
+      }
     }
   }
 }

@@ -11,7 +11,7 @@
     text-transform: uppercase;
     color: $color-default-white;
     margin: 0;
-    margin-top: 5px;
+    margin-top: 7px;
 
     @include vp-1023 {
       margin-top: 0;
@@ -24,7 +24,9 @@
     }
   }
 
-  a {
+  a,
+  span {
+    display: block;
     color: $color-white-opacity-0-7;
   }
 }
@@ -86,7 +88,7 @@
 
   @include vp-767 {
     flex-direction: column;
-    padding-bottom: 22px;
+    padding-bottom: 23px;
     position: relative;
     margin: 0 $mobile-margin-asade;
   }
@@ -116,17 +118,17 @@
 }
 
 .page-footer__social {
-  margin-top: 30px;
+  margin-top: 32px;
   margin-left: 10px;
 
   @include vp-1023 {
-    margin-top: 0;
+    margin-top: -5px;
     margin-left: 30px;
   }
 
   @include vp-767 {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 
@@ -159,6 +161,20 @@
 
     &:active {
       opacity: 0.5;
+    }
+  }
+
+  @include vp-1023 {
+    &:last-of-type a{
+      width: 35px;
+      justify-content: end;
+    }
+  }
+
+  @include vp-767 {
+    &:last-of-type a{
+      width: 40px;
+      justify-content: center;
     }
   }
 
@@ -202,7 +218,7 @@
 
   @include vp-1023 {
     grid-template-columns: 220px;
-    margin-top: 15px;
+    margin-top: 14px;
   }
 
   @include vp-767 {
@@ -271,14 +287,28 @@
 }
 
 .page-footer__contacts-item {
-  margin-top: 8px;
+  margin-top: 9px;
 
   &:first-of-type {
     margin-top: 0;
 
     @include vp-767 {
-      margin-bottom: 14px;
+      margin-top: 2px;
+      margin-bottom: 20px;
     }
+  }
+
+  a {
+    display: block;
+    width: fit-content;
+  }
+
+  @include vp-1023 {
+    margin-top: 8px;
+  }
+
+  @include vp-767 {
+    margin-top: 11px;
   }
 }
 
@@ -298,7 +328,7 @@
       content: "";
       width: 15px;
       height: 15px;
-      background-image: url("../img/svg/minus.svg");
+      background-image: url("../img/svg/plus.svg");
       background-repeat: no-repeat;
       background-size: 15px 15px;
       background-position: center center;
@@ -313,7 +343,7 @@
   .page-footer__accordion-item-active {
     @include vp-767 {
       &::after {
-        background-image: url("../img/svg/plus.svg");
+        background-image: url("../img/svg/minus.svg");
       }
     }
   }
@@ -321,12 +351,15 @@
 
 .page-footer__menu-item,
 .page-footer__contacts-item {
-  a {
+  a,
+  span {
     @include vp-767 {
       font-size: 14px;
       line-height: 135%;
     }
+  }
 
+  a {
     &:hover {
       opacity: 0.7;
     }

@@ -891,7 +891,7 @@ button,
   border-radius: 3px;
   border: 1px solid #f2f5f7;
   background-color: transparent;
-  margin-left: 145px;
+  margin-left: 150px;
   width: 160px;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -1017,10 +1017,12 @@ button,
   text-transform: uppercase;
   color: #ffffff;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
-.page-footer a {
+.page-footer a,
+.page-footer span {
+  display: block;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1057,7 +1059,7 @@ button,
 }
 
 .page-footer__social {
-  margin-top: 30px;
+  margin-top: 32px;
   margin-left: 10px;
 }
 
@@ -1160,11 +1162,18 @@ button,
 }
 
 .page-footer__contacts-item {
-  margin-top: 8px;
+  margin-top: 9px;
 }
 
 .page-footer__contacts-item:first-of-type {
   margin-top: 0;
+}
+
+.page-footer__contacts-item a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .page-footer__menu-item a:hover,
@@ -1238,7 +1247,7 @@ button,
 }
 
 .catalog__item a:focus-visible {
-  outline: solid 5px white;
+  outline: solid 2px white;
 }
 
 .catalog__item img {
@@ -1408,17 +1417,21 @@ button,
   line-height: 135%;
 }
 
+.advantages__item--price h3 {
+  margin-top: 20px;
+}
+
 .question-form {
   width: 100%;
-  background-image: -o-linear-gradient(310.8deg, rgba(4, 24, 39, 0.5) 631px, #00b2ff 631px, #00b2ff 100%);
-  background-image: linear-gradient(139.2deg, rgba(4, 24, 39, 0.5) 631px, #00b2ff 631px, #00b2ff 100%);
+  background-image: -o-linear-gradient(310.8deg, rgba(4, 24, 39, 0.5) 634px, #00b2ff 634px, #00b2ff 100%);
+  background-image: linear-gradient(139.2deg, rgba(4, 24, 39, 0.5) 634px, #00b2ff 634px, #00b2ff 100%);
   background-color: #00b2ff;
 }
 
 .question-form__wrapper {
   width: 1220px;
   margin: 0 auto;
-  padding: 165px 0 247px 0;
+  padding: 165px 0 248px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1fr;
@@ -1493,17 +1506,36 @@ button,
   margin-top: 12px;
 }
 
+.question-form__checkbox label {
+  width: 235px;
+  padding-left: 26px;
+}
+
+.question-form__checkbox label::before {
+  left: 0;
+  top: 7px;
+}
+
 .modal-question {
   width: 500px;
   min-height: 610px;
   background-color: #00b2ff;
-  padding: 40px;
+  padding: 39px;
+  padding-top: 37px;
   margin: 0 auto;
   position: relative;
+  border-radius: 3px;
 }
 
-.modal-question p {
-  margin-top: 15px;
+.modal-question form h2 {
+  font-size: 30px;
+  line-height: 140%;
+}
+
+.modal-question form p {
+  margin-top: 3px;
+  font-family: "PT Mono", "Times New Roman", serif;
+  line-height: 22px;
 }
 
 .modal-question__button-close {
@@ -1540,11 +1572,15 @@ button,
 }
 
 .modal-question__item {
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .modal-question__item:first-of-type {
   margin-top: 0;
+}
+
+.modal-question__item textarea {
+  height: 155px;
 }
 
 .modal-question__checkbox-button-wrapper {
@@ -1555,7 +1591,7 @@ button,
   -webkit-box-direction: reverse;
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
-  margin-top: 25px;
+  margin-top: 24px;
 }
 
 .modal-question__checkbox-button-wrapper button {
@@ -1563,7 +1599,17 @@ button,
 }
 
 .modal-question__checkbox {
-  margin-top: 20px;
+  margin-top: 19px;
+}
+
+.modal-question__checkbox label {
+  width: 100%;
+  padding-left: 33px;
+}
+
+.modal-question__checkbox label::before {
+  top: 0px;
+  left: 9px;
 }
 
 .modal-question__button {
@@ -1678,14 +1724,13 @@ button,
 }
 
 .form__checkbox label {
+  font-family: "PT Mono", "Times New Roman", serif;
   display: block;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
   opacity: 0.8;
   position: relative;
-  width: 235px;
-  padding-left: 26px;
   cursor: pointer;
 }
 
@@ -1698,8 +1743,6 @@ button,
   box-sizing: border-box;
   border: 1px solid #ffffff;
   border-radius: 2px;
-  left: 0;
-  top: 9px;
 }
 
 .form__checkbox label:hover {
@@ -1866,7 +1909,7 @@ button,
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    margin-right: 25px;
+    margin-right: 26px;
     margin-top: 5px;
     gap: 0;
   }
@@ -1943,8 +1986,15 @@ button,
   }
 
   .page-footer__social {
-    margin-top: 0;
+    margin-top: -5px;
     margin-left: 30px;
+  }
+
+  .page-footer__social-item:last-of-type a {
+    width: 35px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
   }
 
   .page-footer__menu {
@@ -1954,7 +2004,7 @@ button,
   .page-footer__menu-list-wrapper {
     -ms-grid-columns: 220px;
     grid-template-columns: 220px;
-    margin-top: 15px;
+    margin-top: 14px;
   }
 
   .page-footer__menu-item:first-of-type {
@@ -1965,6 +2015,10 @@ button,
     width: 320px;
     margin-right: 0;
     margin-left: auto;
+  }
+
+  .page-footer__contacts-item {
+    margin-top: 8px;
   }
 
   .catalog {
@@ -1995,7 +2049,7 @@ button,
   }
 
   .about__wrapper {
-    padding: 35px 0 82px 0;
+    padding: 35px 0 81px 0;
     margin: 0 50px 0 46px;
     gap: 28px;
   }
@@ -2028,6 +2082,22 @@ button,
 
   .advantages__item p {
     margin-top: 9px;
+  }
+
+  .advantages__item--short h3 {
+    margin-top: 13px;
+  }
+
+  .advantages__item--short p {
+    margin-top: 13px;
+  }
+
+  .advantages__item--price h3 {
+    margin-top: 10px;
+  }
+
+  .advantages__item--price p {
+    margin-top: 6px;
   }
 
   .question-form {
@@ -2106,8 +2176,8 @@ button,
   }
 
   .page-header__contacts-list {
-    margin-top: 5px;
-    margin-right: 20px;
+    margin-top: 1px;
+    margin-right: 16px;
   }
 
   .main-screen {
@@ -2183,14 +2253,21 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-bottom: 22px;
+    padding-bottom: 23px;
     position: relative;
     margin: 0 25px;
   }
 
   .page-footer__social {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 15px;
+  }
+
+  .page-footer__social-item:last-of-type a {
+    width: 40px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .page-footer__menu {
@@ -2225,7 +2302,12 @@ button,
   }
 
   .page-footer__contacts-item:first-of-type {
-    margin-bottom: 14px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+  }
+
+  .page-footer__contacts-item {
+    margin-top: 11px;
   }
 
   .page-footer__menu-wrapper--hidden .page-footer__menu-list {
@@ -2243,7 +2325,7 @@ button,
     content: "";
     width: 15px;
     height: 15px;
-    background-image: url("../img/svg/minus.svg");
+    background-image: url("../img/svg/plus.svg");
     background-repeat: no-repeat;
     background-size: 15px 15px;
     background-position: center center;
@@ -2253,11 +2335,13 @@ button,
 
   .page-footer__menu-wrapper .page-footer__accordion-item-active::after,
   .page-footer__contacts-wrapper .page-footer__accordion-item-active::after {
-    background-image: url("../img/svg/plus.svg");
+    background-image: url("../img/svg/minus.svg");
   }
 
   .page-footer__menu-item a,
-  .page-footer__contacts-item a {
+  .page-footer__menu-item span,
+  .page-footer__contacts-item a,
+  .page-footer__contacts-item span {
     font-size: 14px;
     line-height: 135%;
   }
@@ -2352,18 +2436,6 @@ button,
     min-height: 340px;
   }
 
-  .advantages__item--short {
-    min-height: 325px;
-  }
-
-  .advantages__item--short h3 {
-    margin-top: 17px;
-  }
-
-  .advantages__item--short p {
-    margin-top: 15px;
-  }
-
   .advantages__item svg {
     width: 30px;
     height: 30px;
@@ -2378,6 +2450,18 @@ button,
     line-height: 135%;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+  }
+
+  .advantages__item--short h3 {
+    margin-top: 18px;
+  }
+
+  .advantages__item--short {
+    min-height: 325px;
+  }
+
+  .advantages__item--price p {
+    margin-top: 13px;
   }
 
   .question-form__wrapper {

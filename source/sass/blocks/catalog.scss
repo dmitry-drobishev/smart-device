@@ -89,16 +89,7 @@
   width: 350px;
   min-height: 650px;
   cursor: pointer;
-  // padding: 15px;
   background-color: $color-calypso;
-
-  // &:hover {
-  //   opacity: 0.7;
-  // }
-
-  // &:active {
-  //   opacity: 0.5;
-  // }
 
   @include vp-1279 {
     max-width: 350px;
@@ -124,7 +115,7 @@
     }
 
     &:focus-visible {
-      outline: solid 5px white;
+      outline: solid 2px white;
     }
   }
 
