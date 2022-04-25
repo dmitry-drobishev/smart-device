@@ -129,11 +129,14 @@
       @include vp-767 {
         margin-top: 18px;
       }
-
     }
 
     p {
       @include vp-1023 {
+        margin-top: 8px;
+      }
+
+      @include vp-767 {
         margin-top: 13px;
       }
     }
